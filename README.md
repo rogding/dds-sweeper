@@ -60,7 +60,7 @@ When the DDS Sweeper is started, configuration is required before it can be used
 
 First, the clock should be setup with the `setclock` command, followed by the `setmult` command.
 
-Second, the number of channels should be configured with the `setchannels` command.
+Second, the number of channels should be configured with the `setchannels` command, which sets the number of dynamic channels, and leaves the remaining channels static.
 
 Finally, the mode and timing should be setup with the `mode` command. The DDS Sweeper uses either discrete amplitude, frequency, and phase steps or sweeps of one parameter (possibly with steps of the other parameter) as its primitive instructions. The DDS Sweeper can then use internal timing (in which case it generates triggers internally after each step or sweep) or external timing (in which case it waits for external triggers).
 
