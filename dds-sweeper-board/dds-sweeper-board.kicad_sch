@@ -10,6 +10,82 @@
   )
 
   (lib_symbols
+    (symbol "74xGxx:74LVC1G17" (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 2.54 7.62 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "74LVC1G17" (at 5.08 -7.62 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at -2.54 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "Single Gate Buff Schmitt LVC CMOS" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Single Schmitt Buffer Gate, Low-Voltage CMOS" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "SOT?23* Texas?R-PDSO-G5?DCK* Texas?R-PDSO-N5?DRL* Texas?X2SON*0.8x0.8mm*P0.48mm*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "74LVC1G17_0_1"
+        (polyline
+          (pts
+            (xy -2.54 1.27)
+            (xy -1.27 1.27)
+            (xy -1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (polyline
+          (pts
+            (xy -7.62 6.35)
+            (xy -7.62 -6.35)
+            (xy 5.08 0)
+            (xy -7.62 6.35)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (polyline
+          (pts
+            (xy -3.81 1.27)
+            (xy -2.54 1.27)
+            (xy -2.54 -1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+      )
+      (symbol "74LVC1G17_1_1"
+        (pin free line (at -2.54 -10.16 90) (length 6.35)
+          (name "NC" (effects (font (size 0.762 0.762))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -15.24 0 0) (length 7.62)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at -5.08 -10.16 90) (length 5.08)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin output line (at 12.7 0 180) (length 7.62)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at -5.08 10.16 270) (length 5.08)
+          (name "VCC" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector:Conn_Coaxial" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0.254 3.048 0)
         (effects (font (size 1.27 1.27)))
@@ -462,6 +538,45 @@
         )
       )
     )
+    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 2.032 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "R" (at 0 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at -1.778 0 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "R res resistor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Resistor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "R_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "R_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "MCU_RaspberryPi_and_Boards:Pico" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -13.97 27.94 0)
         (effects (font (size 1.27 1.27)))
@@ -829,14 +944,29 @@
   (junction (at 195.58 119.38) (diameter 0) (color 0 0 0 0)
     (uuid 2d015ac1-c812-46c2-842a-af909f8fbe28)
   )
+  (junction (at 66.04 67.31) (diameter 0) (color 0 0 0 0)
+    (uuid 40f3c676-ec55-499d-9201-873428f32bdb)
+  )
   (junction (at 195.58 111.76) (diameter 0) (color 0 0 0 0)
     (uuid 4820538d-9b87-40fc-9d5b-4cbc327bcd4e)
+  )
+  (junction (at 68.58 67.31) (diameter 0) (color 0 0 0 0)
+    (uuid 4ae0b8fa-bf07-4a05-baba-7157ad185941)
   )
   (junction (at 82.55 101.6) (diameter 0) (color 0 0 0 0)
     (uuid 57c628b4-3f3a-491e-992f-94b45b9d3e20)
   )
+  (junction (at 96.52 115.57) (diameter 0) (color 0 0 0 0)
+    (uuid 5904e697-8f6e-49b2-80d1-217602ada6fd)
+  )
   (junction (at 25.4 158.75) (diameter 0) (color 0 0 0 0)
     (uuid 6ff920f8-bdd6-463f-aec6-365d1fccff61)
+  )
+  (junction (at 170.18 149.86) (diameter 0) (color 0 0 0 0)
+    (uuid 711e819e-e55a-4765-aea9-b7666e1b3760)
+  )
+  (junction (at 82.55 67.31) (diameter 0) (color 0 0 0 0)
+    (uuid 74f0c916-4dc5-4227-9778-7caa7d08ed61)
   )
   (junction (at 25.4 166.37) (diameter 0) (color 0 0 0 0)
     (uuid 7c7e5d57-7313-4ef7-bd5b-e6c18ab584a9)
@@ -888,6 +1018,7 @@
   )
 
   (no_connect (at 142.24 123.19) (uuid 0751c35d-cae9-410c-98b1-010bc3009574))
+  (no_connect (at 85.09 87.63) (uuid 154f3b03-0813-4da9-bf32-8d675c07532f))
   (no_connect (at 106.68 85.09) (uuid 1ac9bddd-4da8-43f5-82bf-185741bc6ac2))
   (no_connect (at 142.24 80.01) (uuid 2d6fc02a-f3ed-4cae-a969-2fdba1338ce5))
   (no_connect (at 106.68 113.03) (uuid 2e77cb56-b769-4de4-94fd-eba5a9977be9))
@@ -939,9 +1070,17 @@
     (stroke (width 0) (type default))
     (uuid 0ab7dd25-f3b1-4d9e-afa8-58adc41f34b9)
   )
+  (wire (pts (xy 100.33 77.47) (xy 106.68 77.47))
+    (stroke (width 0) (type default))
+    (uuid 0e9a4e9d-7ab3-4471-b0c2-0b41db353037)
+  )
   (wire (pts (xy 156.21 111.76) (xy 182.88 111.76))
     (stroke (width 0) (type default))
     (uuid 0ed17b02-2097-4716-9227-02ee9b33dddc)
+  )
+  (wire (pts (xy 76.2 87.63) (xy 82.55 87.63))
+    (stroke (width 0) (type default))
+    (uuid 114ecf47-bfc2-4574-9685-6c9629681341)
   )
   (wire (pts (xy 43.18 184.15) (xy 50.8 184.15))
     (stroke (width 0) (type default))
@@ -962,10 +1101,6 @@
   (wire (pts (xy 195.58 96.52) (xy 195.58 99.06))
     (stroke (width 0) (type default))
     (uuid 165136cd-d859-4a43-adfa-44f3842b9c86)
-  )
-  (wire (pts (xy 71.12 77.47) (xy 106.68 77.47))
-    (stroke (width 0) (type default))
-    (uuid 1ac3a052-58e7-4240-8cbf-06c51b1a66ef)
   )
   (wire (pts (xy 87.63 153.67) (xy 87.63 146.05))
     (stroke (width 0) (type default))
@@ -1011,7 +1146,7 @@
     (stroke (width 0) (type default))
     (uuid 2e623238-83aa-4adf-a4d1-2743df349afc)
   )
-  (wire (pts (xy 55.88 92.71) (xy 106.68 92.71))
+  (wire (pts (xy 58.42 92.71) (xy 106.68 92.71))
     (stroke (width 0) (type default))
     (uuid 2f37da4b-6b8f-4293-aebf-9c6a47c67894)
   )
@@ -1027,13 +1162,25 @@
     (stroke (width 0) (type default))
     (uuid 3aa711af-a8b6-47d5-a7c7-0cf0ef1bff90)
   )
+  (wire (pts (xy 68.58 67.31) (xy 69.85 67.31))
+    (stroke (width 0) (type default))
+    (uuid 3e396a2c-85f5-4a7d-b552-ac7a5610a405)
+  )
   (wire (pts (xy 106.68 125.73) (xy 100.33 125.73))
     (stroke (width 0) (type default))
     (uuid 3e4fb7dd-65b1-4c72-9406-138c586e5814)
   )
-  (wire (pts (xy 55.88 163.83) (xy 48.26 163.83))
+  (wire (pts (xy 68.58 52.07) (xy 68.58 67.31))
+    (stroke (width 0) (type default))
+    (uuid 40380afd-3796-48af-ab47-93263da871fd)
+  )
+  (wire (pts (xy 58.42 163.83) (xy 48.26 163.83))
     (stroke (width 0) (type default))
     (uuid 415468ac-cdde-4cda-8fdb-2e8649143dfc)
+  )
+  (wire (pts (xy 82.55 67.31) (xy 96.52 67.31))
+    (stroke (width 0) (type default))
+    (uuid 44af0bdd-e546-4ef8-a7cc-9adc3982d1d1)
   )
   (wire (pts (xy 195.58 93.98) (xy 195.58 96.52))
     (stroke (width 0) (type default))
@@ -1091,6 +1238,10 @@
     (stroke (width 0) (type default))
     (uuid 5e6e38a2-1fc4-449f-b8e3-eb367f3a290f)
   )
+  (wire (pts (xy 92.71 115.57) (xy 96.52 115.57))
+    (stroke (width 0) (type default))
+    (uuid 5ec7c93a-12db-4f33-8aa7-b0e9199b673d)
+  )
   (wire (pts (xy 195.58 86.36) (xy 195.58 88.9))
     (stroke (width 0) (type default))
     (uuid 5fa03772-353e-4da1-a0c1-3f3f82105692)
@@ -1098,6 +1249,14 @@
   (wire (pts (xy 153.67 97.79) (xy 142.24 97.79))
     (stroke (width 0) (type default))
     (uuid 6092b41f-e042-4fb7-9269-123a518536fa)
+  )
+  (wire (pts (xy 58.42 92.71) (xy 58.42 163.83))
+    (stroke (width 0) (type default))
+    (uuid 61414cc6-2acd-46d8-a6d3-a23b286069a8)
+  )
+  (wire (pts (xy 72.39 52.07) (xy 68.58 52.07))
+    (stroke (width 0) (type default))
+    (uuid 637a90fb-e9cb-446d-985e-6ea567aa19a9)
   )
   (wire (pts (xy 60.96 185.42) (xy 60.96 180.34))
     (stroke (width 0) (type default))
@@ -1126,6 +1285,10 @@
   (wire (pts (xy 87.63 161.29) (xy 87.63 167.64))
     (stroke (width 0) (type default))
     (uuid 77265fe7-5fe1-49c5-a4a8-d75fa5d37195)
+  )
+  (wire (pts (xy 80.01 52.07) (xy 82.55 52.07))
+    (stroke (width 0) (type default))
+    (uuid 7aa3bce5-b1da-41d5-8fbb-e78e4847cd95)
   )
   (wire (pts (xy 100.33 125.73) (xy 100.33 177.8))
     (stroke (width 0) (type default))
@@ -1159,6 +1322,10 @@
     (stroke (width 0) (type default))
     (uuid 88628195-2afa-4f9c-bf90-d6d4b073df3c)
   )
+  (wire (pts (xy 170.18 146.05) (xy 170.18 149.86))
+    (stroke (width 0) (type default))
+    (uuid 899ae2fa-f1b1-4d07-beea-6c2b0602c7f2)
+  )
   (wire (pts (xy 85.09 101.6) (xy 82.55 101.6))
     (stroke (width 0) (type default))
     (uuid 8a6867e0-6da3-4d43-bc2e-9a3e237df70d)
@@ -1166,6 +1333,10 @@
   (wire (pts (xy 43.18 181.61) (xy 46.99 181.61))
     (stroke (width 0) (type default))
     (uuid 8abb88f4-99e2-470c-8951-1dffbf26f251)
+  )
+  (wire (pts (xy 170.18 149.86) (xy 170.18 153.67))
+    (stroke (width 0) (type default))
+    (uuid 8de4ef64-0db0-4d3d-950c-3956d284f205)
   )
   (wire (pts (xy 195.58 116.84) (xy 195.58 119.38))
     (stroke (width 0) (type default))
@@ -1175,6 +1346,10 @@
     (stroke (width 0) (type default))
     (uuid 95b2960d-448a-4595-88d0-54fe5a337cc8)
   )
+  (wire (pts (xy 66.04 67.31) (xy 68.58 67.31))
+    (stroke (width 0) (type default))
+    (uuid 98ec1572-1788-4b58-a6da-07261aa74aa2)
+  )
   (wire (pts (xy 43.18 187.96) (xy 25.4 187.96))
     (stroke (width 0) (type default))
     (uuid 9aefbfa1-27cd-4ee7-965f-ac708a82a76b)
@@ -1183,9 +1358,17 @@
     (stroke (width 0) (type default))
     (uuid 9bb66deb-252b-4150-93ec-42cd01919b62)
   )
+  (wire (pts (xy 96.52 88.9) (xy 92.71 88.9))
+    (stroke (width 0) (type default))
+    (uuid 9ce6b143-6dd2-4a4e-8e12-396202ecf181)
+  )
   (wire (pts (xy 153.67 101.6) (xy 182.88 101.6))
     (stroke (width 0) (type default))
     (uuid a0d34ef2-f4d8-4d0f-ae79-9a5a75e52792)
+  )
+  (wire (pts (xy 82.55 52.07) (xy 82.55 67.31))
+    (stroke (width 0) (type default))
+    (uuid a3a60d38-e39e-47c7-a0aa-80f76fe922bc)
   )
   (wire (pts (xy 142.24 105.41) (xy 149.86 105.41))
     (stroke (width 0) (type default))
@@ -1215,6 +1398,10 @@
     (stroke (width 0) (type default))
     (uuid b961c79f-8407-4454-a09c-b0f3953385c0)
   )
+  (wire (pts (xy 92.71 96.52) (xy 92.71 115.57))
+    (stroke (width 0) (type default))
+    (uuid ba25fc5f-c04a-4bd7-aa6b-6148f217b571)
+  )
   (wire (pts (xy 195.58 111.76) (xy 195.58 114.3))
     (stroke (width 0) (type default))
     (uuid bb1b816a-8cad-4e84-9d16-d19343a2624b)
@@ -1243,10 +1430,6 @@
     (stroke (width 0) (type default))
     (uuid c9f690ca-5c30-4378-8b39-8f73e39993c4)
   )
-  (wire (pts (xy 55.88 163.83) (xy 55.88 92.71))
-    (stroke (width 0) (type default))
-    (uuid cc5a68c1-3ffc-4096-94ca-c5b8ee6492d4)
-  )
   (wire (pts (xy 195.58 91.44) (xy 195.58 93.98))
     (stroke (width 0) (type default))
     (uuid cdcb5eac-2e8c-40da-92e0-422c3f863f52)
@@ -1254,6 +1437,10 @@
   (wire (pts (xy 55.88 193.04) (xy 50.8 193.04))
     (stroke (width 0) (type default))
     (uuid d02a31e6-99d2-460b-85e6-16446d3ba035)
+  )
+  (wire (pts (xy 176.53 153.67) (xy 170.18 153.67))
+    (stroke (width 0) (type default))
+    (uuid d03f26fe-2423-473f-af10-30cdca9301ff)
   )
   (wire (pts (xy 66.04 173.99) (xy 58.42 173.99))
     (stroke (width 0) (type default))
@@ -1266,6 +1453,10 @@
   (wire (pts (xy 195.58 99.06) (xy 195.58 101.6))
     (stroke (width 0) (type default))
     (uuid d1eb9375-69a2-4211-8139-33dfb3ebd515)
+  )
+  (wire (pts (xy 96.52 67.31) (xy 96.52 88.9))
+    (stroke (width 0) (type default))
+    (uuid d48bdaad-7c61-4f2b-bc42-9849c6078706)
   )
   (wire (pts (xy 50.8 193.04) (xy 48.26 193.04))
     (stroke (width 0) (type default))
@@ -1295,6 +1486,10 @@
     (stroke (width 0) (type default))
     (uuid e689c5c6-4caa-40a4-92ed-958bb1001785)
   )
+  (wire (pts (xy 176.53 146.05) (xy 170.18 146.05))
+    (stroke (width 0) (type default))
+    (uuid e89e8137-2ee7-4fe2-9141-5e01c2016d34)
+  )
   (wire (pts (xy 87.63 167.64) (xy 81.28 167.64))
     (stroke (width 0) (type default))
     (uuid e9bbb2b5-8e40-4d0e-b50a-a43923fae460)
@@ -1302,6 +1497,10 @@
   (wire (pts (xy 147.32 120.65) (xy 142.24 120.65))
     (stroke (width 0) (type default))
     (uuid ecd02439-0d80-4596-85b2-d0039e3a220c)
+  )
+  (wire (pts (xy 71.12 77.47) (xy 72.39 77.47))
+    (stroke (width 0) (type default))
+    (uuid f80c7a4d-7a1d-469f-82f9-917ae8581154)
   )
   (wire (pts (xy 152.4 100.33) (xy 142.24 100.33))
     (stroke (width 0) (type default))
@@ -1315,6 +1514,10 @@
   (text "Headers for AD9959 Eval Board U2" (at 173.99 128.27 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 73b80d02-81b7-4fae-a677-5b5de80e6bbd)
+  )
+  (text "Ground plane jumper" (at 172.72 157.48 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 98736f00-4b99-428d-a1e2-b084855a3fc5)
   )
 
   (label "PIN_RESET" (at 172.72 111.76 0) (fields_autoplaced)
@@ -1398,7 +1601,7 @@
   (symbol (lib_id "power:GND") (at 106.68 95.25 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 08e6cc30-3c5e-408e-b362-cfce31dc7397)
-    (property "Reference" "#PWR0111" (at 100.33 95.25 0)
+    (property "Reference" "#PWR09" (at 100.33 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 102.87 95.2501 90)
@@ -1412,9 +1615,35 @@
     )
     (pin "1" (uuid 441afab2-5d52-4027-b8b5-1145aa250351))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0111") (unit 1)
+          (reference "#PWR09") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "pspice:CAP") (at 76.2 67.31 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1569c7ff-d855-41d9-95a9-f3164734ad12)
+    (property "Reference" "C4" (at 76.2 58.42 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "0.1uF" (at 76.2 60.96 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 76.2 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 76.2 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d6534c8c-aea5-4719-9f0f-b7d8eb507f3a))
+    (pin "2" (uuid 4e9ae9c6-8886-403b-bbf0-77e6e50fb540))
+    (instances
+      (project "dds-sweeper-board-buffers"
+        (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -1438,7 +1667,7 @@
     (pin "1" (uuid 38425966-5426-4250-8dd3-d4f3cd976e00))
     (pin "2" (uuid 19125681-7808-44d1-99cc-5bf0e5f896f3))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "C2") (unit 1)
         )
@@ -1449,7 +1678,7 @@
   (symbol (lib_id "MCU_RaspberryPi_and_Boards:Pico") (at 124.46 101.6 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1af43592-a851-4efd-891b-4a001e50bc36)
-    (property "Reference" "U1" (at 124.46 133.35 0)
+    (property "Reference" "U3" (at 124.46 133.35 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Pico" (at 124.46 130.81 0)
@@ -1505,9 +1734,35 @@
     (pin "8" (uuid 3b9238aa-12d8-4f15-b9b5-956f7e8e2d42))
     (pin "9" (uuid 5810cda1-a59c-45c4-964d-fcbf542dd51d))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "U1") (unit 1)
+          (reference "U3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 176.53 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 30e804f6-48b0-459c-9d2d-fc869276d92c)
+    (property "Reference" "R2" (at 179.07 148.59 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "0" (at 179.07 151.13 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 174.752 149.86 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 176.53 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 677fec7e-0b76-4df8-af35-612a5925aeb9))
+    (pin "2" (uuid 8afe47c0-f65d-4106-b62b-e64c272c5911))
+    (instances
+      (project "dds-sweeper-board-buffers"
+        (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -1516,7 +1771,7 @@
   (symbol (lib_id "power:GND") (at 179.07 90.17 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 37259f51-dc38-4d16-ac8e-fbad47cb9154)
-    (property "Reference" "#PWR08" (at 172.72 90.17 0)
+    (property "Reference" "#PWR019" (at 172.72 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 175.26 90.17 90)
@@ -1530,9 +1785,9 @@
     )
     (pin "1" (uuid 52fa9b3f-df52-49be-87b8-a00e5a9a8733))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -1541,7 +1796,7 @@
   (symbol (lib_id "power:GND") (at 142.24 95.25 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3d115ecc-6bc4-484b-a209-5fc5936157c2)
-    (property "Reference" "#PWR0105" (at 148.59 95.25 0)
+    (property "Reference" "#PWR015" (at 148.59 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 146.05 95.2501 90)
@@ -1555,9 +1810,9 @@
     )
     (pin "1" (uuid 19ab1d94-0f15-4bab-b114-7e66794e11b0))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0105") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -1566,7 +1821,7 @@
   (symbol (lib_id "Connector:Conn_Coaxial") (at 43.18 163.83 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3f0d6380-e9aa-4688-9191-60a57027287c)
-    (property "Reference" "J1" (at 39.37 162.2668 0)
+    (property "Reference" "J2" (at 39.37 162.2668 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "REF CLK OUT" (at 39.37 164.8068 0)
@@ -1581,9 +1836,35 @@
     (pin "1" (uuid 9b96ef3d-6327-4f29-9f7f-afb645001411))
     (pin "2" (uuid e4a1ea17-506a-429d-99d6-bfe69e232275))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "J1") (unit 1)
+          (reference "J2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 92.71 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 41c41163-654d-4fdf-9ec5-896f282b0c59)
+    (property "Reference" "R1" (at 95.25 91.44 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "0" (at 95.25 93.98 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 90.932 92.71 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 92.71 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3917c180-ff89-472a-93cf-8b571f9a17f0))
+    (pin "2" (uuid 822ee09c-fe29-4a3c-a411-3be5341b8000))
+    (instances
+      (project "dds-sweeper-board-buffers"
+        (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -1592,7 +1873,7 @@
   (symbol (lib_id "power:GND") (at 106.68 107.95 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 645b0548-a1ba-49e6-a276-747e89550fa6)
-    (property "Reference" "#PWR05" (at 100.33 107.95 0)
+    (property "Reference" "#PWR010" (at 100.33 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 102.87 107.9501 90)
@@ -1606,9 +1887,9 @@
     )
     (pin "1" (uuid d65fe4c6-8fa3-482a-9bc4-4486306cf2a2))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -1617,7 +1898,7 @@
   (symbol (lib_id "power:GND") (at 195.58 106.68 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 669ba45b-6984-46dd-8137-6fca1008901a)
-    (property "Reference" "#PWR0112" (at 201.93 106.68 0)
+    (property "Reference" "#PWR021" (at 201.93 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 199.39 106.6799 90)
@@ -1631,9 +1912,9 @@
     )
     (pin "1" (uuid e50dcf0a-825a-466d-8559-2708600e601a))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0112") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -1642,7 +1923,7 @@
   (symbol (lib_id "power:GND") (at 81.28 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 73007e73-3316-41a7-8b3f-e146751020f2)
-    (property "Reference" "#PWR03" (at 81.28 173.99 0)
+    (property "Reference" "#PWR06" (at 81.28 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 81.28 172.72 0)
@@ -1656,9 +1937,9 @@
     )
     (pin "1" (uuid 7adf2e3d-79fe-4221-8bbe-05fa27474bc0))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -1682,7 +1963,7 @@
     (pin "1" (uuid 162e74dd-5696-4938-8498-65343a0607c1))
     (pin "2" (uuid fa1f616d-1a53-41b1-a5b9-46bd040dcff3))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "J3") (unit 1)
         )
@@ -1693,7 +1974,7 @@
   (symbol (lib_id "power:GND") (at 80.01 97.79 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 81c078d9-6a9c-4cf3-8611-46ed33372bf0)
-    (property "Reference" "#PWR0106" (at 73.66 97.79 0)
+    (property "Reference" "#PWR05" (at 73.66 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.2 97.7901 90)
@@ -1707,9 +1988,34 @@
     )
     (pin "1" (uuid 7244ed1e-508c-4bd4-99fe-74f9d7d8a38c))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0106") (unit 1)
+          (reference "#PWR05") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 170.18 149.86 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8210b77a-57af-41bd-b7ca-5db295a76225)
+    (property "Reference" "#PWR018" (at 163.83 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 166.37 149.86 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 170.18 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 170.18 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ab2143f4-6da4-46ce-b8b0-50fc625c1a90))
+    (instances
+      (project "dds-sweeper-board-buffers"
+        (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -1718,7 +2024,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 38.1 181.61 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8e15f92e-d715-4b36-a9ca-92e1bb071ec9)
-    (property "Reference" "J7" (at 38.1 172.72 0)
+    (property "Reference" "J1" (at 38.1 172.72 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DDS PWR" (at 38.1 175.26 0)
@@ -1734,9 +2040,9 @@
     (pin "2" (uuid c85999b8-f29f-4578-8b74-9385f0ab61ca))
     (pin "1" (uuid 99c17663-7b6a-427e-a218-447a4500834d))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "J7") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -1745,7 +2051,7 @@
   (symbol (lib_id "power:GND") (at 181.61 106.68 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9f4023ba-5d36-4c22-99ee-c7f860735fc9)
-    (property "Reference" "#PWR04" (at 175.26 106.68 0)
+    (property "Reference" "#PWR020" (at 175.26 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 106.68 90)
@@ -1759,9 +2065,9 @@
     )
     (pin "1" (uuid 8043daab-4e83-41d3-ba2f-bc81cf9d43de))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -1770,7 +2076,7 @@
   (symbol (lib_id "power:GND") (at 83.82 180.34 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a2b7d6a4-2930-4cce-bcf1-c5467e985d83)
-    (property "Reference" "#PWR0108" (at 83.82 173.99 0)
+    (property "Reference" "#PWR07" (at 83.82 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.82 175.26 0)
@@ -1784,9 +2090,9 @@
     )
     (pin "1" (uuid 00120271-cb20-4f08-ba59-d42fcb6ba0ea))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0108") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -1795,7 +2101,7 @@
   (symbol (lib_id "power:GND") (at 147.32 120.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a7110832-bf79-4ecb-9ded-bb99c596c665)
-    (property "Reference" "#PWR0103" (at 153.67 120.65 0)
+    (property "Reference" "#PWR017" (at 153.67 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 151.13 120.6501 90)
@@ -1809,9 +2115,9 @@
     )
     (pin "1" (uuid 52b4a331-6788-4159-8759-60e63a56b85a))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0103") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -1820,7 +2126,7 @@
   (symbol (lib_id "power:GND") (at 46.99 181.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a76f1b7f-cdfd-428b-91f2-3eb2d0b731be)
-    (property "Reference" "#PWR09" (at 53.34 181.61 0)
+    (property "Reference" "#PWR02" (at 53.34 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 50.8 181.61 90)
@@ -1834,9 +2140,9 @@
     )
     (pin "1" (uuid 768e28be-d310-4092-b65f-cfb4b294bba9))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -1845,7 +2151,7 @@
   (symbol (lib_id "power:GND") (at 142.24 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a985982f-1586-4df8-bf20-3bbf5fef14c5)
-    (property "Reference" "#PWR0102" (at 148.59 82.55 0)
+    (property "Reference" "#PWR014" (at 148.59 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 146.05 82.5501 90)
@@ -1859,9 +2165,35 @@
     )
     (pin "1" (uuid 911ba792-db2f-44ae-ac25-24e40aae5e5c))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0102") (unit 1)
+          (reference "#PWR014") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 76.2 52.07 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bdd1a01c-b8a9-4cd8-9593-741966342299)
+    (property "Reference" "C3" (at 76.2 44.45 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1uF" (at 76.2 46.99 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 72.39 53.0352 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 76.2 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 81c524c3-9578-4d31-aa69-4b2ea7b2adaa))
+    (pin "2" (uuid 9991ab45-8a1b-46c7-a7ad-1cf8eacb5b5e))
+    (instances
+      (project "dds-sweeper-board-buffers"
+        (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -1870,7 +2202,7 @@
   (symbol (lib_id "power:GND") (at 124.46 68.58 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid befdabee-7e70-47d8-a6ae-797ab32af485)
-    (property "Reference" "#PWR01" (at 124.46 62.23 0)
+    (property "Reference" "#PWR013" (at 124.46 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.46 63.5 0)
@@ -1884,9 +2216,9 @@
     )
     (pin "1" (uuid 90a161de-91a7-4d6f-b88d-6a5c6860dd79))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -1895,7 +2227,7 @@
   (symbol (lib_id "power:GND") (at 113.03 177.8 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c562c765-11c0-45ff-8b1b-f3bcc795ae30)
-    (property "Reference" "#PWR0107" (at 119.38 177.8 0)
+    (property "Reference" "#PWR012" (at 119.38 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.84 177.8001 90)
@@ -1909,9 +2241,9 @@
     )
     (pin "1" (uuid 717cdc62-e48e-4c5f-955a-a5ea01ad6fb7))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0107") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -1920,7 +2252,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 85.09 109.22 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cafba05b-c479-4ca0-a130-4bc55c3532ea)
-    (property "Reference" "J6" (at 90.17 107.95 90)
+    (property "Reference" "J5" (at 90.17 107.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RESET" (at 90.17 110.49 90)
@@ -1936,9 +2268,9 @@
     (pin "2" (uuid 08b3ee86-ea3e-4f21-9fe9-c0211436dec9))
     (pin "1" (uuid 1b2cff29-c93e-4362-8f63-0555ce39813a))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "J6") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -1947,7 +2279,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x16_Odd_Even") (at 190.5 101.6 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d15b3323-5f8e-4560-b811-ced8999f13a9)
-    (property "Reference" "J4" (at 189.23 81.28 0)
+    (property "Reference" "J6" (at 189.23 81.28 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "AD9959 Eval Header" (at 189.23 80.01 0)
@@ -1992,9 +2324,9 @@
     (pin "31" (uuid 8c38abb4-de12-49e0-85e1-1d341064ba77))
     (pin "30" (uuid 9f62c1eb-de9a-483e-b4a7-9838096740a0))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "J4") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -2003,7 +2335,7 @@
   (symbol (lib_id "Connector:Conn_Coaxial") (at 66.04 77.47 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d372abb8-158d-49c8-a6db-7addc5ae6417)
-    (property "Reference" "J5" (at 62.23 75.9068 0)
+    (property "Reference" "J4" (at 62.23 75.9068 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Trigger In" (at 62.23 78.4468 0)
@@ -2018,9 +2350,9 @@
     (pin "1" (uuid 0bc77f3c-a669-4b1d-b239-95e40c0add76))
     (pin "2" (uuid ec9922af-64f6-476f-978c-595f667bddea))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "J5") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -2029,7 +2361,7 @@
   (symbol (lib_id "Device:C") (at 60.96 189.23 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d5f3ff9a-ac9e-4aa1-bf43-83d8ffa70056)
-    (property "Reference" "C4" (at 57.15 190.5 0)
+    (property "Reference" "C1" (at 57.15 190.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 57.15 187.96 0)
@@ -2044,9 +2376,9 @@
     (pin "1" (uuid d40db29e-7193-495f-bb7e-0dd3962ca7e1))
     (pin "2" (uuid 7e83c775-d02e-42ff-8997-886409f2da22))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "C4") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -2055,7 +2387,7 @@
   (symbol (lib_id "power:GND") (at 106.68 120.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d67e0d51-fcd6-4924-9839-404e6f5b9640)
-    (property "Reference" "#PWR0101" (at 100.33 120.65 0)
+    (property "Reference" "#PWR011" (at 100.33 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 102.87 120.6501 90)
@@ -2069,9 +2401,9 @@
     )
     (pin "1" (uuid 8fa7bf68-ec54-42ff-9587-8246e1b35894))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0101") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -2080,7 +2412,7 @@
   (symbol (lib_id "Device:C") (at 87.63 157.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d784a789-6b5d-40a1-bd91-84a00f1660a0)
-    (property "Reference" "C3" (at 91.44 156.21 0)
+    (property "Reference" "C5" (at 91.44 156.21 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0.1uF" (at 91.44 158.75 0)
@@ -2095,9 +2427,38 @@
     (pin "1" (uuid fb73d192-a684-4d12-9794-22284350d5e8))
     (pin "2" (uuid d93b7ac2-b83e-478b-8179-57ee17e00599))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "C3") (unit 1)
+          (reference "C5") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "74xGxx:74LVC1G17") (at 87.63 77.47 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid d8cbfa1a-ab88-4972-a08b-a29d291b77c0)
+    (property "Reference" "U2" (at 99.06 73.2791 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "74LVC1G17" (at 99.06 75.8191 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 85.09 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf" (at 87.63 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 17e58300-ca81-4763-bd99-cee8070f46e1))
+    (pin "4" (uuid 34a22d94-ce3e-4e88-adbf-3bab74c49381))
+    (pin "5" (uuid 95de8c85-e897-4d90-8e09-cf7841a7cf46))
+    (pin "3" (uuid e65ee247-2805-46ab-8364-4fd7106ab787))
+    (pin "1" (uuid 5d061625-8676-4a1c-8483-5f2e2265b48e))
+    (instances
+      (project "dds-sweeper-board-buffers"
+        (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -2106,7 +2467,7 @@
   (symbol (lib_id "power:GND") (at 25.4 158.75 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dae7a3a5-766b-4d44-a4a8-2232b66cca13)
-    (property "Reference" "#PWR0109" (at 25.4 152.4 0)
+    (property "Reference" "#PWR01" (at 25.4 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 25.4 153.67 0)
@@ -2120,9 +2481,34 @@
     )
     (pin "1" (uuid 8f2f0d04-8efa-4063-97a8-32eb2f0aec87))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR0109") (unit 1)
+          (reference "#PWR01") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 76.2 87.63 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid dfeb7b78-2421-4cd5-a4be-eb30530f6d15)
+    (property "Reference" "#PWR04" (at 69.85 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 72.39 87.63 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 76.2 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 76.2 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid aa4e86c2-8a96-4fda-8ea2-6ebb91430c71))
+    (instances
+      (project "dds-sweeper-board-buffers"
+        (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -2131,7 +2517,7 @@
   (symbol (lib_id "power:GND") (at 146.05 107.95 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e27fd38f-a206-4807-96a2-9664f358a835)
-    (property "Reference" "#PWR07" (at 152.4 107.95 0)
+    (property "Reference" "#PWR016" (at 152.4 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.86 107.9501 90)
@@ -2145,9 +2531,9 @@
     )
     (pin "1" (uuid d78acd1a-a7d0-40f2-b10b-c32d453d3453))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -2156,7 +2542,7 @@
   (symbol (lib_id "Regulator_Linear:XC6210B332MR") (at 83.82 190.5 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e952ba8c-6f11-4393-bd21-bcd644fb4b78)
-    (property "Reference" "U3" (at 83.82 200.66 0)
+    (property "Reference" "U1" (at 83.82 200.66 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "XC6210B18" (at 83.82 198.12 0)
@@ -2174,9 +2560,9 @@
     (pin "4" (uuid 7d0c37da-31ad-47b6-982f-85b2c64cebb0))
     (pin "5" (uuid 1e31c18e-be2b-4715-826f-f47bc65d9bdb))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "U3") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -2185,7 +2571,7 @@
   (symbol (lib_id "power:GND") (at 106.68 82.55 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ea47e825-64f0-42d2-8f14-06af576d1696)
-    (property "Reference" "#PWR02" (at 100.33 82.55 0)
+    (property "Reference" "#PWR08" (at 100.33 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 102.87 82.5501 90)
@@ -2199,9 +2585,9 @@
     )
     (pin "1" (uuid 1b686aa3-b51f-4644-b9d1-21b58aa19da0))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -2210,7 +2596,7 @@
   (symbol (lib_id "power:GND") (at 66.04 67.31 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f25879d6-1e74-4567-929f-bee5dee8ba44)
-    (property "Reference" "#PWR06" (at 66.04 60.96 0)
+    (property "Reference" "#PWR03" (at 66.04 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 66.04 62.23 0)
@@ -2224,9 +2610,9 @@
     )
     (pin "1" (uuid d46d7b9b-05a5-453d-b08e-417ac92c17c2))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2235,7 +2621,7 @@
   (symbol (lib_id "pspice:CAP") (at 106.68 177.8 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fd3d3ea6-e0d0-4a9b-a904-0bbdb04f6958)
-    (property "Reference" "C1" (at 106.68 168.91 90)
+    (property "Reference" "C6" (at 106.68 168.91 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 106.68 171.45 90)
@@ -2250,9 +2636,9 @@
     (pin "1" (uuid f91fc91e-cf67-4592-a2e0-52851681e661))
     (pin "2" (uuid b2a4cc9e-0a84-4ae6-8e47-f5d785bbaa8c))
     (instances
-      (project "dds-sweeper-board"
+      (project "dds-sweeper-board-buffers"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
-          (reference "C1") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
