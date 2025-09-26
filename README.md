@@ -54,6 +54,24 @@ The mass storage device should unmount after the copy completes. Your Pico is no
 
 ## Usage
 
+### Wiring
+
+Here is a simplified wiring diagram showing the mapping between Pico pins and the AD9959.
+
+![DDS Sweeper Wiring Diagram](/img/wiring_diagram.svg)
+
+In the `dds-sweeper-board` directory is a KiCAD project for a simple carrier board
+with a socket that aligns directly to the header pins of the AD9959 Eval board.
+It is a recommended design for ensuring quality high-speed communication signals between the Pico and AD9959.
+
+![DDS Sweeper Board](/img/dds-sweeper-board.png)
+
+This board has a 3-pin header for connecting 3.3V and 1.8V to the TB1 header of the AD9959 Eval board,
+as well as an SMA connected 1.8V for connection to the `AVDD` analog output power supplies of the board.
+Note that the `AVDD` connections for each channel are electrically connected by the AD9959 Eval PCB,
+meaning the 1.8V can be daisy chained with more SMA cables to power the `BG_VDD` and `CLK_VDD` inputs.
+
+
 ### Setup
 
 When the DDS Sweeper is started, configuration is required before it can be used. It is often good to begin with a `reset` command, which resets the AD9959.
