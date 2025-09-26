@@ -1615,7 +1615,7 @@
     )
     (pin "1" (uuid 441afab2-5d52-4027-b8b5-1145aa250351))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR09") (unit 1)
         )
@@ -1641,7 +1641,7 @@
     (pin "1" (uuid d6534c8c-aea5-4719-9f0f-b7d8eb507f3a))
     (pin "2" (uuid 4e9ae9c6-8886-403b-bbf0-77e6e50fb540))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "C4") (unit 1)
         )
@@ -1667,7 +1667,7 @@
     (pin "1" (uuid 38425966-5426-4250-8dd3-d4f3cd976e00))
     (pin "2" (uuid 19125681-7808-44d1-99cc-5bf0e5f896f3))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "C2") (unit 1)
         )
@@ -1734,7 +1734,7 @@
     (pin "8" (uuid 3b9238aa-12d8-4f15-b9b5-956f7e8e2d42))
     (pin "9" (uuid 5810cda1-a59c-45c4-964d-fcbf542dd51d))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "U3") (unit 1)
         )
@@ -1760,7 +1760,7 @@
     (pin "1" (uuid 677fec7e-0b76-4df8-af35-612a5925aeb9))
     (pin "2" (uuid 8afe47c0-f65d-4106-b62b-e64c272c5911))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "R2") (unit 1)
         )
@@ -1785,7 +1785,7 @@
     )
     (pin "1" (uuid 52fa9b3f-df52-49be-87b8-a00e5a9a8733))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR019") (unit 1)
         )
@@ -1810,7 +1810,7 @@
     )
     (pin "1" (uuid 19ab1d94-0f15-4bab-b114-7e66794e11b0))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR015") (unit 1)
         )
@@ -1836,7 +1836,7 @@
     (pin "1" (uuid 9b96ef3d-6327-4f29-9f7f-afb645001411))
     (pin "2" (uuid e4a1ea17-506a-429d-99d6-bfe69e232275))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "J2") (unit 1)
         )
@@ -1862,7 +1862,7 @@
     (pin "1" (uuid 3917c180-ff89-472a-93cf-8b571f9a17f0))
     (pin "2" (uuid 822ee09c-fe29-4a3c-a411-3be5341b8000))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "R1") (unit 1)
         )
@@ -1887,7 +1887,7 @@
     )
     (pin "1" (uuid d65fe4c6-8fa3-482a-9bc4-4486306cf2a2))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR010") (unit 1)
         )
@@ -1912,7 +1912,7 @@
     )
     (pin "1" (uuid e50dcf0a-825a-466d-8559-2708600e601a))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR021") (unit 1)
         )
@@ -1937,7 +1937,7 @@
     )
     (pin "1" (uuid 7adf2e3d-79fe-4221-8bbe-05fa27474bc0))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR06") (unit 1)
         )
@@ -1963,7 +1963,7 @@
     (pin "1" (uuid 162e74dd-5696-4938-8498-65343a0607c1))
     (pin "2" (uuid fa1f616d-1a53-41b1-a5b9-46bd040dcff3))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "J3") (unit 1)
         )
@@ -1988,7 +1988,7 @@
     )
     (pin "1" (uuid 7244ed1e-508c-4bd4-99fe-74f9d7d8a38c))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR05") (unit 1)
         )
@@ -2013,7 +2013,7 @@
     )
     (pin "1" (uuid ab2143f4-6da4-46ce-b8b0-50fc625c1a90))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR018") (unit 1)
         )
@@ -2030,7 +2030,7 @@
     (property "Value" "DDS PWR" (at 38.1 175.26 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" (at 38.1 181.61 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 38.1 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 38.1 181.61 0)
@@ -2040,7 +2040,7 @@
     (pin "2" (uuid c85999b8-f29f-4578-8b74-9385f0ab61ca))
     (pin "1" (uuid 99c17663-7b6a-427e-a218-447a4500834d))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "J1") (unit 1)
         )
@@ -2065,7 +2065,7 @@
     )
     (pin "1" (uuid 8043daab-4e83-41d3-ba2f-bc81cf9d43de))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR020") (unit 1)
         )
@@ -2090,7 +2090,7 @@
     )
     (pin "1" (uuid 00120271-cb20-4f08-ba59-d42fcb6ba0ea))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR07") (unit 1)
         )
@@ -2115,7 +2115,7 @@
     )
     (pin "1" (uuid 52b4a331-6788-4159-8759-60e63a56b85a))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR017") (unit 1)
         )
@@ -2140,7 +2140,7 @@
     )
     (pin "1" (uuid 768e28be-d310-4092-b65f-cfb4b294bba9))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR02") (unit 1)
         )
@@ -2165,7 +2165,7 @@
     )
     (pin "1" (uuid 911ba792-db2f-44ae-ac25-24e40aae5e5c))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR014") (unit 1)
         )
@@ -2191,7 +2191,7 @@
     (pin "1" (uuid 81c524c3-9578-4d31-aa69-4b2ea7b2adaa))
     (pin "2" (uuid 9991ab45-8a1b-46c7-a7ad-1cf8eacb5b5e))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "C3") (unit 1)
         )
@@ -2216,7 +2216,7 @@
     )
     (pin "1" (uuid 90a161de-91a7-4d6f-b88d-6a5c6860dd79))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR013") (unit 1)
         )
@@ -2241,7 +2241,7 @@
     )
     (pin "1" (uuid 717cdc62-e48e-4c5f-955a-a5ea01ad6fb7))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR012") (unit 1)
         )
@@ -2258,7 +2258,7 @@
     (property "Value" "RESET" (at 90.17 110.49 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" (at 85.09 109.22 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 85.09 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 85.09 109.22 0)
@@ -2268,7 +2268,7 @@
     (pin "2" (uuid 08b3ee86-ea3e-4f21-9fe9-c0211436dec9))
     (pin "1" (uuid 1b2cff29-c93e-4362-8f63-0555ce39813a))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "J5") (unit 1)
         )
@@ -2324,7 +2324,7 @@
     (pin "31" (uuid 8c38abb4-de12-49e0-85e1-1d341064ba77))
     (pin "30" (uuid 9f62c1eb-de9a-483e-b4a7-9838096740a0))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "J6") (unit 1)
         )
@@ -2350,7 +2350,7 @@
     (pin "1" (uuid 0bc77f3c-a669-4b1d-b239-95e40c0add76))
     (pin "2" (uuid ec9922af-64f6-476f-978c-595f667bddea))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "J4") (unit 1)
         )
@@ -2376,7 +2376,7 @@
     (pin "1" (uuid d40db29e-7193-495f-bb7e-0dd3962ca7e1))
     (pin "2" (uuid 7e83c775-d02e-42ff-8997-886409f2da22))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "C1") (unit 1)
         )
@@ -2401,7 +2401,7 @@
     )
     (pin "1" (uuid 8fa7bf68-ec54-42ff-9587-8246e1b35894))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR011") (unit 1)
         )
@@ -2427,7 +2427,7 @@
     (pin "1" (uuid fb73d192-a684-4d12-9794-22284350d5e8))
     (pin "2" (uuid d93b7ac2-b83e-478b-8179-57ee17e00599))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "C5") (unit 1)
         )
@@ -2456,7 +2456,7 @@
     (pin "3" (uuid e65ee247-2805-46ab-8364-4fd7106ab787))
     (pin "1" (uuid 5d061625-8676-4a1c-8483-5f2e2265b48e))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "U2") (unit 1)
         )
@@ -2481,7 +2481,7 @@
     )
     (pin "1" (uuid 8f2f0d04-8efa-4063-97a8-32eb2f0aec87))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR01") (unit 1)
         )
@@ -2506,7 +2506,7 @@
     )
     (pin "1" (uuid aa4e86c2-8a96-4fda-8ea2-6ebb91430c71))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR04") (unit 1)
         )
@@ -2531,7 +2531,7 @@
     )
     (pin "1" (uuid d78acd1a-a7d0-40f2-b10b-c32d453d3453))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR016") (unit 1)
         )
@@ -2560,7 +2560,7 @@
     (pin "4" (uuid 7d0c37da-31ad-47b6-982f-85b2c64cebb0))
     (pin "5" (uuid 1e31c18e-be2b-4715-826f-f47bc65d9bdb))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "U1") (unit 1)
         )
@@ -2585,7 +2585,7 @@
     )
     (pin "1" (uuid 1b686aa3-b51f-4644-b9d1-21b58aa19da0))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR08") (unit 1)
         )
@@ -2610,7 +2610,7 @@
     )
     (pin "1" (uuid d46d7b9b-05a5-453d-b08e-417ac92c17c2))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "#PWR03") (unit 1)
         )
@@ -2636,7 +2636,7 @@
     (pin "1" (uuid f91fc91e-cf67-4592-a2e0-52851681e661))
     (pin "2" (uuid b2a4cc9e-0a84-4ae6-8e47-f5d785bbaa8c))
     (instances
-      (project "dds-sweeper-board-buffers"
+      (project "dds-sweeper-board"
         (path "/2fc70846-1f68-48b7-a1be-f7617c334c44"
           (reference "C6") (unit 1)
         )
