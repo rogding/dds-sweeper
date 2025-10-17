@@ -409,7 +409,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "dds-sweeper-board.kicad_pro",
+    "filename": "dds-sweeper-board-buffers.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -464,7 +464,7 @@
         "pattern": "5V"
       },
       {
-        "netclass": "Wider",
+        "netclass": "Default",
         "pattern": "3V3"
       },
       {

@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,7.0.10*%
-%TF.CreationDate,2024-10-11T15:57:45-04:00*%
+%TF.CreationDate,2025-09-19T15:10:35-04:00*%
 %TF.ProjectId,dds-sweeper-board,6464732d-7377-4656-9570-65722d626f61,0*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L2,Bot*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 7.0.10) date 2024-10-11 15:57:45*
+G04 Created by KiCad (PCBNEW 7.0.10) date 2025-09-19 15:10:35*
 %MOMM*%
 %LPD*%
 G01*
@@ -69,8 +69,8 @@ X78770000Y-93930000D03*
 X81310000Y-96470000D03*
 X78770000Y-96470000D03*
 D11*
-X40920000Y-71030000D03*
+X42050000Y-71560000D03*
 D12*
-X38380000Y-71030000D03*
-X35840000Y-71030000D03*
+X42050000Y-74100000D03*
+X42050000Y-76640000D03*
 M02*
