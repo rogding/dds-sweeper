@@ -21,15 +21,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1.278928"
-     inkscape:cx="420.6648"
-     inkscape:cy="329.57289"
-     inkscape:window-width="2560"
-     inkscape:window-height="1369"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:zoom="1.8086773"
+     inkscape:cx="578.87606"
+     inkscape:cy="326.48167"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="BG" />
+     inkscape:current-layer="layer5" />
   <defs
      id="defs1">
     <style
@@ -4930,7 +4930,7 @@
        width="82.638847"
        height="19.281183"
        id="rect923-9"
-       style="display:inline;fill:#528be0;fill-opacity:1;stroke-width:0px" />
+       style="display:inline;fill:#e94190;fill-opacity:1;stroke-width:0px" />
     <rect
        class="cls-20"
        x="565.91901"
@@ -4987,9 +4987,9 @@
        style="display:inline;fill:#624193;fill-opacity:1;stroke-width:0px" />
     <rect
        class="cls-20"
-       x="635.80322"
+       x="633.2132"
        y="39.914265"
-       width="9.4768085"
+       width="12.066869"
        height="1.943282"
        id="rect731-5-2-6"
        style="display:inline;fill:#dcdedb;stroke-width:0px" />
@@ -5010,19 +5010,19 @@
        transform="matrix(4.0997598,0,0,4.0997598,-44.39826,-46.617883)"><tspan
          x="178.77928"
          y="17.833426"
-         id="tspan1">DVDD
+         id="tspan8">DVDD
 </tspan><tspan
          x="178.77928"
          y="20.835636"
-         id="tspan2">AVDD
+         id="tspan9">AVDD
 </tspan><tspan
          x="178.77928"
          y="23.837847"
-         id="tspan3">BG_VDD
+         id="tspan10">BG_VDD
 </tspan><tspan
          x="178.77928"
          y="26.840057"
-         id="tspan4">CLK_VDD</tspan></text>
+         id="tspan11">CLK_VDD</tspan></text>
     <path
        sodipodi:type="star"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.98299;stroke-linecap:round;stroke-linejoin:round"
@@ -5040,22 +5040,22 @@
        d="m 180.93332,37.043645 -11.10441,-6.305341 11.01279,-6.46403 z"
        inkscape:transform-center-x="-8.7160781"
        inkscape:transform-center-y="-0.0001902979"
-       transform="matrix(2.3350082,4.112321,-4.112321,2.3350082,317.00018,-759.41617)" />
+       transform="matrix(2.3350082,4.112321,-4.112321,2.3350082,313.00018,-759.41617)" />
     <text
        xml:space="preserve"
        style="font-size:3.33579px;line-height:0.9;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:13.5325;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.13386;stroke-linecap:round;stroke-linejoin:round"
        x="159.29169"
        y="18.152826"
        id="text1071-9-7-5-4-7-3"
-       transform="matrix(4.0997598,0,0,4.0997598,-50.065052,-35.284298)"><tspan
+       transform="matrix(4.0997598,0,0,4.0997598,-54.065052,-35.284298)"><tspan
          x="159.29169"
          y="18.152826"
-         id="tspan5">1.8V<tspan
+         id="tspan12">1.8V<tspan
    y="18.152826"
-   id="tspan6"> </tspan></tspan><tspan
+   id="tspan13"> </tspan></tspan><tspan
          x="159.29169"
          y="21.155037"
-         id="tspan7">REG</tspan></text>
+         id="tspan14">REG</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
